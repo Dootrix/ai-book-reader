@@ -36,7 +36,7 @@ def update_bookmark(bookmark_id: int, bookmark_data: schemas.BookmarkUpdate, db:
     if db_bookmark is None:
         raise HTTPException(status_code=404, detail="Bookmark not found")
     
-    update_data = bookmark_data.dict(exclude_unset=True)
+    update_data = bookmark_data.model_dump(exclude_unset=True)
     for field, value in update_data.items():
         setattr(db_bookmark, field, value)
     
