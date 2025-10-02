@@ -27,7 +27,9 @@ This is an AI-assisted book reader application designed to enhance the reading e
 - Handle AI API calls gracefully with proper error handling
 - Implement fallback mechanisms when AI services are unavailable
 - Consider rate limiting and cost optimization for AI operations
+- Support user-provided OpenAI API keys (BYOK - Bring Your Own Key) for enhanced privacy and cost control
 - Ensure user privacy and data security when processing book content
+- Validate and secure API key storage using environment variables or secure configuration
 
 ### Testing Guidelines
 - Write unit tests for core functionality
@@ -44,7 +46,9 @@ This is an AI-assisted book reader application designed to enhance the reading e
 ### Security Considerations
 - Sanitize user inputs, especially file uploads
 - Implement proper authentication and authorization if needed
-- Secure API keys and sensitive configuration
+- Secure API keys and sensitive configuration using environment variables or encrypted storage
+- Never log or expose user-provided API keys in plain text
+- Provide clear warnings about API key security when users input their own keys
 - Follow security best practices for file handling
 
 ## Specific Guidance for This Repository
@@ -59,6 +63,8 @@ This is an AI-assisted book reader application designed to enhance the reading e
 - Provide reading comprehension assistance
 - Support text summarization and key insights
 - Enable semantic search within books
+- Allow users to configure their own OpenAI API keys for personalized AI services
+- Provide clear UI for API key management with proper security warnings
 
 ### User Interface
 - Design for readability and eye comfort
