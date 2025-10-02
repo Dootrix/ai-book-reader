@@ -54,7 +54,7 @@ This is an AI-assisted book reader application designed to enhance the reading e
 ## Specific Guidance for This Repository
 
 ### File Processing
-- Support multiple book formats (PDF, EPUB, TXT, etc.)
+- Support multiple book formats (PDF, EPUB, TXT, DOCX, etc.)
 - Implement efficient text extraction and processing
 - Handle large files gracefully with streaming or chunking
 
