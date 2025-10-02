@@ -1,0 +1,15 @@
+# Node and frontend artifacts
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+# Python virtual environments
+backend/.venv/
+
+# SQLite database files
+backend/**/*.db
+backend/**/*.sqlite3
+
+# Vercel local state
+.vercel
