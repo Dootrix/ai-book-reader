@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
@@ -9,14 +11,14 @@ export default function Home() {
           Your intelligent companion for reading and understanding books
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <Link href="/notes" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-lg font-semibold mb-2">📝 Smart Notes</h3>
             <p className="text-gray-600">Take AI-powered notes while reading</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          </Link>
+          <Link href="/bookmarks" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
             <h3 className="text-lg font-semibold mb-2">🔖 Bookmarks</h3>
             <p className="text-gray-600">Save important passages and references</p>
-          </div>
+          </Link>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-lg font-semibold mb-2">🤖 AI Insights</h3>
             <p className="text-gray-600">Get AI-generated summaries and insights</p>
